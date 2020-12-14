@@ -1,21 +1,29 @@
-import React from 'react';
+import React from 'react'
+
+import Header from './features/headers/Headers'
+import TodoList from './features/todos/TodoList'
+import Footer from './features/footer/Footer'
 
 function App() {
-    return (
-        <div className='App'>
-        <nav>
-            <section>
-                <h1>React Redux Todo App </h1>
-                <div className='navContent'>
-                <div className='navLinks'></div>
-                </div>
-            </section>
-        </nav>
+  return (
+    <div className="App">
+      <nav>
         <section>
-        <h2>React Redux to do</h2>
-      </section>
-        </div>
-    )
+          <h1>React Redux to do App</h1>
+        </section>
+      </nav>
+      <main>
+        <section className="medium-container">
+          <h2>Todos</h2>
+          <div className="todoapp">
+            <Header />
+            <TodoList />
+            <Footer />
+          </div>
+        </section>
+      </main>
+    </div>
+  )
 }
 
 export default App
